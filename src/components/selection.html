@@ -1,0 +1,6 @@
+<template>
+    <button click.delegate="sayHi($event)">click me</button>
+    <select style="width: 200px; height:40px" change.trigger="onChange($event)">
+        <option repeat.for="o of option" value.bind="o">${o}</option>
+    </select>
+</template>
